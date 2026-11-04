@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projeto - Tabuada</title>
+        <link rel="stylesheet" href="src/css/styles.css" />
+        <script src="src/js/scripts.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h2 id="titulo">
+                Digite o número e confirme para gerar uma tabuada
+            </h2>
+            <section id="form-container">
+                <form>
+                    <div class="form-control">
+                        <label for="numero">Tabuada do:</label>
+                        <input
+                            type="number"
+                            name="numero"
+                            id="numero"
+                            placeholder="2"
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="multiplicador">Multiplicar até:</label>
+                        <input
+                            type="number"
+                            name="multiplicador"
+                            id="multiplicador"
+                            value="10"
+                        />
+                    </div>
+                    <button id="calcular-btn">Calcular</button>
+                </form>
+            </section>
+            <section id="tabuada-container">
+                <h3>Tabuada do número: <span></span></h3>
+                <div class="operacoes">
+                    <p>Informe um número para calcular uma tabuada...</p>
+                    <div class="row">
+                        <p class="operacao">1 x 10 =</p>
+                        <p class="resultado">10</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
